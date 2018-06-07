@@ -1,5 +1,5 @@
 shared:
-    template: images-test/images-test
+    template: images-test/images-test@2.0
     environment:
         OWNER: "jim.imgrund"
 
