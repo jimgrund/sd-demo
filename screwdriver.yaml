@@ -1,0 +1,21 @@
+shared:
+    template: images-test/images-test
+    environment:
+        OWNER: "jim.imgrund"
+
+jobs:
+    os5:
+        requires: [~commit]
+        description: "This is test to demo that RHEL5 gets used"
+        image: RHEL5
+    os6:
+        requires: [~commit]
+        description: "This is test to demo that RHEL6 gets used"
+        image: RHEL6
+    os7:
+        requires: [~commit]
+        description: "This is test to demo that RHEL7 gets used"
+        image: RHEL7
+    defaultos:
+        requires: [~commit]
+        description: "This is test to confirm that RHEL7 gets used"
